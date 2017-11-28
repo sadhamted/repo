@@ -1,4 +1,5 @@
 class httpd_itzgeek {
+
     package { 'httpd':
       ensure => present,
     } ->
@@ -10,7 +11,7 @@ class httpd_itzgeek {
     } ->
  file { '/var/www/itzgeek/index.html': # Creating Index file
      ensure  => file,
-     content => "Index HTML Is Managed By Puppet",
+     content => "Index HTML Is Managed By Puppet done by sadham",
      mode    => '0644',
    } ->
     file { '/etc/httpd/conf.d/custom_itzgeek.conf': # Path to the file on client machine
